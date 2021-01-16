@@ -25,6 +25,14 @@
                 top: 250px;
                 width: 20%;
             }
+            p{
+                position: absolute;
+                left: 8px;
+                top: 16px;
+                font-size: 18px;
+            }
+
+            }
             
          
 
@@ -35,13 +43,13 @@
         <img src="googlelogo_color_272x92dp.png">
         <form>
             <input type="text">
-            <button type="button" onclick="returns()">Search</button>
+            <button type="button" onclick="thefirstr();">Search</button>
         </form>
         <p id="demo"></p>
         <script>
-            function returns(){
-                let x = "text";
-                "demo" = x;
+            function thefirst(){
+                let firstFunc = document.getElementById("text").value;
+                document.getElementById("demo").innerHTML = firstFunc;
             }
         </script>
     </body>
