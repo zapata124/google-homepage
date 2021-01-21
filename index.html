@@ -2,7 +2,7 @@
 <html>
     <head>
         <style>
-            body {}
+        
             h1 {
                 font-size:50px; 
                 text-align:center; 
@@ -27,9 +27,9 @@
             }
             p{
                 position: absolute;
-                left: 8px;
-                top: 16px;
-                font-size: 18px;
+                left: 350px;
+                top: 300px;
+                font-size: 12px;
             }
 
             }
@@ -39,17 +39,19 @@
         </style>
     </head>
 
-    <body>
+    
         <img src="googlelogo_color_272x92dp.png">
-        <form>
-            <input type="text">
-            <button type="button" onclick="thefirstr();">Search</button>
-        </form>
-        <p id="demo"></p>
+        <body>
+            <input type="text" id="here">
+            <button type="button" onclick="thefirst();">Search</button>
+
+            <p id="display"></p>
+    
         <script>
             function thefirst(){
-                let firstFunc = document.getElementById("text").value;
-                document.getElementById("demo").innerHTML = firstFunc;
+                var firstFunc = document.getElementById("here").value + "Eddy is working on site.";
+                document.getElementById("display").innerHTML = firstFunc;
+            
             }
         </script>
     </body>
