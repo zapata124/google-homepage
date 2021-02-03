@@ -60,11 +60,15 @@
     
         <script>
             function thefirst(){
-                var firstFunc = document.getElementById("here").value + "Eddy is working on site.";
+                var firstFunc = document.getElementById("here").value + "Eddy is working on site";
                 document.getElementById("display").innerHTML = firstFunc;
             
-            }
+            };
+            function calc(){
+                var numb = documnet.getElementById("here").value;
+                    document.getElementById("display").innerHTML = parseInt(numb);
+                }
         </script>
-        <div id="outPutBox">Update coming</div>
+        <div id="outPutBox"></div>
     </body>
 </html>
