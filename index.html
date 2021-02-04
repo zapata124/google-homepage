@@ -55,7 +55,7 @@
         <img src="googlelogo_color_272x92dp.png">
         <body>
             <input type="text" id="here">
-            <button type="button" onclick="thefirst();">Search</button>
+            <button type="button" onclick="thefirst();calc()">Search</button>
          <p id="display"></p>
     
         <script>
@@ -65,9 +65,16 @@
             
             };
             function calc(){
-                var numb = documnet.getElementById("here").value;
-                    document.getElementById("display").innerHTML = parseInt(numb);
+            
+                var numb = document.getElementById("here").value;
+                
+                if(parseInt(numb)){
+                    document.getElementById("outPutBox").innerHTML = parseInt(numb);
+                }else{
+                    document.getElementById("outPutBox").innerHTML = "Not a Number";
                 }
+            }
+            
         </script>
         <div id="outPutBox"></div>
     </body>
